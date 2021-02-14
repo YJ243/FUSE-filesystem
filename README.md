@@ -1,5 +1,5 @@
 # FUSE-filesystem study
-FUSE를 이용한 내 파일 시스템 만들기
+This is a place for studying FUSE in Dankook University.
 
 ## 1. FUSE란?
    From the [official repository](https://github.com/libfuse/libfuse)
