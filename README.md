@@ -56,7 +56,8 @@ Several flags are passed to `gcc` while compiling FFS. Here is a table to unders
 ## example output  
 ![예제수행결과](./images/passthrough_example.png)
 
-루트부터 시작하여 내 파일 시스템 계층 구조를 보여줌
+my_passthrough: 루트부터 시작하여 내 파일 시스템 계층 구조를 보여줌
+ 
 -----------------------------------------------
 ## Contact
 **Dankook University**
