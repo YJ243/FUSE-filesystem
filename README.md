@@ -7,6 +7,7 @@ From the [official repository](https://github.com/libfuse/libfuse)
 수많은 툴과 라이브러리를 이용하여 커널단에 비해 파일 시스템을 쉽게 개발할 수 있다. FUSE는 현재
 가장 일반적으로 사용되며, 현재 100개 이상의 FUSE 기반 파일 시스템이 나와있다.
 
+## FUSE Structure
 ![FUSE구조](./images/fuse_structure.png)
 
 
