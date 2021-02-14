@@ -2,7 +2,7 @@
 FUSE를 이용한 내 파일 시스템 만들기
 
 ## 1. FUSE란?
- From the [official repository](https://github.com/libfuse/libfuse)
+   From the [official repository](https://github.com/libfuse/libfuse)
 >  FUSE는 user-space에서 파일 시스템을 개발하는데 사용되는 프레임워크이다. User-space에서는
 수많은 툴과 라이브러리를 이용하여 커널단에 비해 파일 시스템을 쉽게 개발할 수 있다. FUSE는 현재
 가장 일반적으로 사용되며, 현재 100개 이상의 FUSE 기반 파일 시스템이 나와있다.
@@ -24,16 +24,16 @@ VFS를 지나 /dev/fuse로 전달된다. 그 후 FUSE 데몬은 /dev/fuse에서 
 ---
 ## 3. How to use my file system
 
-디렉토리로 들어가서 mount할 지점인 폴더를 생성
+- 디렉토리로 들어가서 mount할 지점인 폴더를 생성
 ```
 $ cd study; mkdir <mount point>
 ```
-컴파일 후 프로그램 실행
+- 컴파일 후 프로그램 실행
 ```
 $ gcc -Wall my_passthrough.c `pkg-config fuse3 --cflags --libs` -o my_passthrough
 $ ./my_passthrough -d -f <mount point>
 ```
-다른 shell 창에서 ```mount point```로 들어가서 작업 수행
+- 다른 shell 창에서 ```mount point```로 들어가서 작업 수행
 
 ---
 #### Flags to `gcc`
