@@ -21,7 +21,8 @@ VFS를 지나 /dev/fuse로 전달된다. 그 후 FUSE 데몬은 /dev/fuse에서 
 
 #### *Libfuse* 설치
 >https://github.com/libfuse/libfuse/releases
----
+
+
 ## 3. How to use my file system
 
 - 디렉토리로 들어가서 mount할 지점인 폴더를 생성
@@ -38,7 +39,6 @@ $ ./my_passthrough -d -f <mount point>
 ---
 #### Flags to `gcc`
 
-Several flags are passed to `gcc` while compiling FFS. Here is a table to understand their meaning.
 
 | FLAG | MEANING       | CONSEQUENCE |
 |:----:|:-------------:|:-----------:|
