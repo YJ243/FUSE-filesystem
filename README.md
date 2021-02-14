@@ -1,13 +1,13 @@
 # FUSE-filesystem study
 FUSE를 이용한 내 파일 시스템 만들기
 
-## FUSE란?
-From the [official repository](https://github.com/libfuse/libfuse)
+## 1. FUSE란?
+ From the [official repository](https://github.com/libfuse/libfuse)
 >  FUSE는 user-space에서 파일 시스템을 개발하는데 사용되는 프레임워크이다. User-space에서는
 수많은 툴과 라이브러리를 이용하여 커널단에 비해 파일 시스템을 쉽게 개발할 수 있다. FUSE는 현재
 가장 일반적으로 사용되며, 현재 100개 이상의 FUSE 기반 파일 시스템이 나와있다.
 
-## FUSE Structure
+## 2. FUSE Structure
 ![FUSE구조](./images/fuse_structure.png)
 
 
@@ -19,10 +19,10 @@ FUSE는 kernel의 *FUSE* 모듈과 user-space의 FUSE daemon, 라이브러리 *l
 VFS를 지나 /dev/fuse로 전달된다. 그 후 FUSE 데몬은 /dev/fuse에서 요청을 읽어 수행하고, 수행이 끝나면 
 드라이버에 요청이 끝났음을 전달하고 이는 application으로 보내진다.
 
-## Libfuse 설치
-> https://github.com/libfuse/libfuse/releases
+#### *Libfuse* 설치
+>https://github.com/libfuse/libfuse/releases
 ---
-## How to use my file system
+## 3. How to use my file system
 
 디렉토리로 들어가서 mount할 지점인 폴더를 생성
 ```
@@ -36,7 +36,7 @@ $ ./my_passthrough -d -f <mount point>
 다른 shell 창에서 ```mount point```로 들어가서 작업 수행
 
 ---
-## Flags to gcc
+#### Flags to `gcc`
 
 Several flags are passed to `gcc` while compiling FFS. Here is a table to understand their meaning.
 
@@ -46,7 +46,7 @@ Several flags are passed to `gcc` while compiling FFS. Here is a table to unders
 |\`pkg-config fuse3 --cflags --libs\`|Required| 컴파일과 링크에 대한 정보 제공, FUSE3 버전 사용|
 
 
-## Flags to ./my_passthrough
+#### Flags to `./my_passthrough`
 
 | FLAG | MEANING       | CONSEQUENCE |
 |:----:|:-------------:|:-----------:|
