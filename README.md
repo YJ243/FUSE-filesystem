@@ -21,7 +21,7 @@ VFS를 지나 /dev/fuse로 전달된다. 그 후 FUSE 데몬은 /dev/fuse에서 
 ## Libfuse 설치
 > https://github.com/libfuse/libfuse/releases
 ---
-## How to use
+## How to use my file system
 
 디렉토리로 들어가서 mount할 지점인 폴더를 생성
 ```
@@ -53,7 +53,7 @@ Several flags are passed to `gcc` while compiling FFS. Here is a table to unders
 |-f|Run in foreground| -f 플래그가 없으면 my_passthrough는 백그라운드 데몬으로 돌아감|
 
 ## example output  
-![예제수행결과](./images/output_passthrough.png)
+![예제수행결과](./images/passthrough.png)
 
 루트부터 시작하여 내 파일 시스템 계층 구조를 보여줌
 -----------------------------------------------
