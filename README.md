@@ -21,7 +21,7 @@ VFS를 지나 /dev/fuse로 전달된다. 그 후 FUSE 데몬은 /dev/fuse에서 
 ## Libfuse 설치
 > https://github.com/libfuse/libfuse/releases
 ---
-## How to use
+## How to use my file system
 
 디렉토리로 들어가서 mount할 지점인 폴더를 생성
 ```
