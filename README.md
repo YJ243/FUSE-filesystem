@@ -53,7 +53,7 @@ $ ./my_passthrough -d -f <mount point>
 |-d|Debug mode| FUSE에 의해서 추가적인 디버깅 정보가 표시됨|
 |-f|Run in foreground| -f 플래그가 없으면 my_passthrough는 백그라운드 데몬으로 돌아감|
 
-## example output  
+## 4. example output  
 ![예제수행결과](./images/passthrough_example.png)
 
 my_passthrough: mirrors the file system hierarchy, starting at the root file system
